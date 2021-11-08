@@ -31,7 +31,9 @@ public class QController {
         Q q = service.postAnswer(answer);
         model.addAttribute("q", q);
         model.addAttribute("answer", A.builder().qId(q.getId()).build());
-
+        if (answer.getQId() == q.getId()) {
+            model.addAttribute("allert", "kzkzkzkz");
+        }
         return "q";
     }
 }

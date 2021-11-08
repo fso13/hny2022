@@ -5,6 +5,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Objects;
 
 @AllArgsConstructor
@@ -13,6 +15,7 @@ import java.util.Objects;
 @Data
 public class Q {
     private int id;
+    private List<String> variables = new LinkedList<>();
     private String html;
 
     @Override
