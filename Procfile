@@ -1,0 +1,1 @@
+web: java -jar build/libs/hny2022-0.0.1-SNAPSHOT.jar
